@@ -1,3 +1,11 @@
+def car_brand(brand):
+    b = 0
+    for i in range(len(p)):
+        if p[i] == brand:
+            b += 1
+    print("",brand,"   -", b)
+
+
 # parkit lot
 p = ["Mercedes", None, "BMW", None, None, "Toyota", "BMW"] # list of None type
 # index 0,    1,     2,    3,    4,        5,     6
@@ -21,22 +29,7 @@ print("Parking (free/total):", free, "/", total, "places")
 for i in range(len(p)):
     print(i, p[i])
 
-m = 0
-for i in range(len(p)):
-    if p[i] == "Mercedes":
-        m += 1
-print("Mercedes   -", m)
+car_brand("Mercedes")
+car_brand("BMW")
+car_brand("Toyota")
 
-
-b = 0
-for i in range(len(p)):
-    if p[i] == "BMW":
-        b += 1
-print("BMW        -", b)
-
-
-t = 0
-for i in range(len(p)):
-    if p[i] == "Toyota":
-        t += 1
-print("Toyota     -", t)
